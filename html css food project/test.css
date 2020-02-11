@@ -1,0 +1,40 @@
+*{
+color: red;
+
+}
+#body1  {
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 400px 300px;
+
+}
+#b{
+	color: blue;
+	background-color: #FCF036 ;
+	background-size: 400px 300px;
+	height: 300px;
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+  	border: 4px dotted blue;
+
+
+}
+#textbox{
+	background-color: #DFE3F3 ;
+	height: 50px;
+	width: 100%px;
+
+}
+.alignleft {
+
+	color: blue;
+	float: left;
+}
+.alignright {
+	
+	color: blue;
+	float: right;
+}

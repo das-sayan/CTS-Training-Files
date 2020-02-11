@@ -1,0 +1,357 @@
+html {
+  scroll-behavior: smooth;   
+}
+body{
+	padding:0;
+	margin:0;
+	background:#fff;
+	position:relative;
+	font-family: 'Lato', sans-serif;
+
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+a:hover{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+}
+h2{
+    margin-left: 100px;
+}
+h3{
+    margin-left: 200px;
+    font-size: 35px;
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+img{
+	width:100%;
+}
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin: 0 50px 0 auto;
+	padding:  0;
+    max-width: 760px;
+}
+nav ul {
+  text-align: right;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 10px;
+  color:  #b3ff1a;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 24px;
+  text-decoration: none;
+  display: inline;
+}
+
+#logo a {
+	float: left;
+    font-size: .8em;
+    text-transform: capitalize;
+    display: initial;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+}
+#logo a span {
+    color: #30c39e;
+}
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: #b3ffe6;	
+}
+.menu li.active a{ 
+	color:   #99ff99;	
+}
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: transparent;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+/*-- banner --*/
+.banner{
+	background:url(banner.jpg) no-repeat center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+    min-height: 700px;
+}
+
+.w3layouts_banner_margin {
+    padding: 17em 0em 0em;
+}
+.image_margin {
+    margin-top: 8em;
+}
+.w3pvt_banner_info h3 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.w3pvt_banner_info h2{
+    font-size: 60px;
+    display: block;
+    color: #30c39e;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: .2em;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.w3pvt_banner_info h3 {
+    text-transform: capitalize;
+    color:  #b3ffcc;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.w3pvt_banner_info p{
+    color: #fff;
+    margin: 1em 0;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-size: 16px;
+
+}
+
+/*-- // banner --*/
+.text{
+	background: #0a8ea0;
+}
+.text p {
+    margin: 0;
+    color: #ddd;
+    line-height: 28px;
+    letter-spacing: .5px;
+    width: 70%;
+    margin: 20px auto;
+}
+/*-- //text --*/
+/*-- footer --*/
+a.move-top span {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(102, 102, 102, 0.30);
+    line-height: 26px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+footer {
+    background: #191919;
+    font-size: 17px;
+}
+/*-- //footer --*/
+
+
+
+.loginBox
+{
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 370px;
+    height: 540px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.7);
+}
+.user
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+#aa
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+}
+.loginBox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.loginBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="email"],
+.loginBox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+   
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.loginBox input[type="submit"]:hover
+{
+    background: #efed40;
+    color: #262626;
+}
+.loginBox a
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
