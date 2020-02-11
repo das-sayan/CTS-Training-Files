@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>PassPort Seva</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script type="text/javascript" src="home.js"></script>
+</head>
+<body>
+	<h3>Passport Seva Kendra </h3>
+  <div class="regibox">
+    <img src="avatar.png" class="avatar">
+ <h1>Signup For Passport Seva</h1>
+  <form id="form1" method="post" action="next.html" name="myform" onsubmit="return validateform()">
+ 	<table align="center" cellpadding="12">
+ 
+  	  <tr>
+		<td> Name :</td>
+		<td><input type="text" name="name" placeholder="Enter Full Name">
+		</td>
+	  </tr>
+
+
+		<tr>
+		<td>Email Id :</td>
+		<td><input type="email" placeholder="Enter Email"></td>
+		</tr>
+ 	
+ 		<tr>
+		<td>Password :</td>
+		<td>
+		<input type="password" name="password" maxlength="8" placeholder="Enter Password">
+		</td>
+		</tr>
+
+		<tr>
+			<td>Qualification</td>
+			<td>
+			<select id="qualification">
+		        <option value="" disabled selected>Select Qualification</option>
+		      	<option value="btech">B.Tech</option>
+				<option value="be">B.E</option>
+				<option value="bsc">B.Sc</option>
+				<option value="others">Others</option>
+			</select>
+		</td>
+		</tr>
+
+		<tr>
+		<td>Mobile Number :</td>
+		<td class="mobile">
+		<input type="text" name="mobile" placeholder="Phone Number 1" maxlength="10"><input type="text" name="mobile1" placeholder="Alternate Mobile Number" maxlength="10">
+		</td>
+		</tr>
+ 
+ 
+
+<tr>
+<td>Address :</td>
+<td><textarea name="address" rows="3" cols="22" form="form1" placeholder="Enter Address"></textarea></td>
+</tr>
+ 
+ 
+
+<tr>
+<td>Date Of Birth:</td>
+<td><input type="date">
+
+</td>
+</tr>
+ 
+<tr>
+			<td>Types</td>
+			<td>
+			<select id="type">
+		        <option value="" disabled selected>Select Type Of Passport</option>
+		      	<option value="normal">Normal</option>
+				<option value="tatkal">Tatkal</option>
+				<option value="ptatkal">Premium Tatkal</option>
+			</select>
+		</td>
+		</tr>
+
+
+<tr>
+<td>Gender</td>
+<td>
+	 	<input type="radio" name="gender" value="male"> Male
+  		<input type="radio" name="gender" value="female"> Female
+ 		 <input type="radio" name="gender" value="other"> Other
+</td>
+</tr>
+<tr>
+<td>Security Question:</td>
+<td>
+	<select id="sques">
+        <option value="" disabled selected>Select Any One Security Questions</option>
+      <option value="q1">What is your nickname?</option>
+		<option value="q2">What is your father's name?</option>
+		<option value="q3">What is your mother's name?</option>
+		<option value="q4">What was your first school you attended?</option>
+		<option value="q5">What is your favorite food?</option>
+		</select>
+
+</td>
+</tr>
+<tr>
+<td>Answer:</td>
+<td><input type="text" placeholder="answer your question" placeholder="Give Answer"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+	<input type="image" src="submit.png" height="54px" width="70px"> &nbsp;&nbsp;&nbsp;
+	<input type="image" src="reset.png" height="47px" width="65px">
+</td>
+</tr>
+</table>
+</form>
+</div>
+ 
+</body>
+</html>

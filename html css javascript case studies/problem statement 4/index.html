@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script type="text/javascript" src="home.js"></script>
+<body>
+	<h1>User Registration Screen</h1>
+	<div class="regibox">
+    <img src="avatar.png" class="avatar">
+ <h3>SignUp</h3>
+  <form id="form1" method="post" action="next.html" name="myform" onsubmit="return validateform()">
+ 	<table align="center" cellpadding="13">
+ 
+  	  <tr>
+		<td> Name :</td>
+		<td><input type="text" name="name" placeholder="Enter Full Name">
+		</td>
+	 	 </tr>
+		<tr>
+		<td>Email Id:</td>
+		<td><input type="email" placeholder="Enter Email"></td>
+		</tr>
+ 	
+ 		<tr>
+		<td>Password:</td>
+		<td>
+		<input type="password" name="password" maxlength="8" placeholder="Enter Password">
+		</td>
+		</tr>
+		<tr>
+		<td>ReType Password:</td>
+		<td>
+		<input type="password" name="rpassword" maxlength="8" placeholder="reType Password">
+		</td>
+		</tr>
+		
+		<tr>
+		<td>Address:</td>
+		<td><textarea name="address" rows="3" cols="22" form="form1" placeholder="Enter Address"></textarea></td>
+		</tr>
+		<tr>
+		<td>Phone Number:</td>
+		<td class="mobile">
+		<input type="text" name="mobile" placeholder="Phone Number" maxlength="10">&nbsp;<input type="text" name="mobile1" placeholder="Landline Number" maxlength="10">
+		</td>
+		</tr>
+<tr>
+<td colspan="2" align="center">
+	<input type="image" src="submit.png" height="50px" width="70px"> &nbsp;&nbsp;&nbsp;
+	<input type="image" src="reset.png" height="42px" width="55px">
+</td>
+</tr>
+</table>
+</form>
+</div>
+<footer class="footertext">
+  <p>This website and its content is copyright
+of User Registration Screen.</p>
+</footer>
+ </body>
+ </html>

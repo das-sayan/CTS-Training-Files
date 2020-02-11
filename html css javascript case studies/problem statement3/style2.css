@@ -1,0 +1,64 @@
+h1{
+  font-family: cursive; 
+  font-size: 25px;         
+  font-weight: bold; 
+  color:#645D5C;
+  text-align: center; 
+  text-decoration: underline;
+  margin-top: -6%;
+}
+h2{
+  font-family: cursive; 
+  font-size: 35px;         
+  color:#FAF92B;
+  text-align: center; 
+}
+h3{
+  font-family: cursive; 
+  font-size: 25px;         
+  color:#FAF92B;
+  text-align: center; 
+}
+input[type=text],input[type=email],input[type=password],input[type=date],textarea, select {
+  width: 72%;
+  padding: 5px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline:none; 
+  text-align: center;
+}
+.mobile{
+  display: flex;
+}
+.regibox{
+    width: 610px;
+    height: 800px;
+    background: rgba(255,255,255,0.8);
+    color: white;
+    border-radius:8px;
+    font-family:bold;
+    top: 60%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 40px);
+}
+
+body{
+	  background: url(flag.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+
