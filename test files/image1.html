@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.a{
+		height: 300px;
+		width: 600px;
+		background-color: grey;
+	}
+	.i{
+		height: 150px;
+		width: 200px;
+	}
+	.v{
+		color: red; font-size: 40px;             
+	}
+	.grad {
+  		height: 300px;
+  		width:600px;
+  		background-image: linear-gradient(to bottom,red,green);
+  	}
+  	.img{
+  		padding-left: 40px;
+  		padding-top: 40px;
+  		opacity: 0.7;
+  	}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+<div class="a" >
+<img class="i" src="1.jpg">
+<img class="i" src="2.jpg">
+
+<p> Cognizant <span class="v">Technology</span> Solutions
+</div>
+<hr>
+<div class="grad">
+	<div class="img">
+		<img src="1.jpg" height="200px" width="300px">
+	</div>
+</div>
+<hr>
+
+<div class="tooltip">COGNIZANT
+  <span class="tooltiptext">Be Cognizant</span>
+</div>
+</body>
+</html>
