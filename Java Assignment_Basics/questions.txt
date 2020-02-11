@@ -1,0 +1,33 @@
+LANGUAGE FUNDAMENTALS – EXERCISES
+
+1.      Write a program to accept a double value. Separate the whole value from the fractional value and store them in two variables. Display the same.
+
+2.      Write a program to accept three numbers and find the largest of three numbers using ternary operator.
+
+3.      Write a program to accept a number and display whether the number is odd or even using the ternary operator.
+
+4.      Write a program to accept three numbers and find the largest and second largest values of three numbers
+
+5.      Write a program to accept a student’s name and three marks. Display the total and average. Display result as First class, Second class, Pass class and Fails.
+
+6.      Write a program to accept a number and display the last digit of the number in words.
+
+7.      Write a program to accept an alphabet and display whether its a vowel or consonant
+
+8.      Write a program to find the sum of all odd numbers from 1 to N. Accept N. Display the sum.
+
+9.      Write a program to find the reverse of a number. Store the reverse value in a different variable. Display the reverse.
+
+10.  Write a program to find the factorial of a non-negative number.
+
+11.  Write a program to generate the following series:
+
+                        1, -2, 3, -4, 5, -6, … N
+
+12.  Write a program to find the sum of all the prime numbers in the range n to m.
+
+Display each prime number and also the final sum.
+
+13.  Write a program to store N elements in an array of integer. Display the elements. Accept a number to be searched. Display whether the number is found or not in the array (LINEAR SEARCH).
+
+14.  Write a program to find the factorial of a number using recursion.
