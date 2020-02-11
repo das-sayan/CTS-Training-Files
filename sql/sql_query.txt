@@ -1,0 +1,41 @@
+1.Which actors have the first name ‘Scarlett’
+ans. select * from actor where first_name like 'Scarlett';
+
+2.Which actors have the last name ‘Johansson’
+ans. select * from actor where last_name like 'Johansson';
+
+3.How many distinct actors last names are there?
+ans. select count(distinct last_name) as "total last name" from actor;
+
+4.Which last names are not repeated?
+ans.select last_name from actor group by last_name having count(last_name)=1
+
+5.Which last names appear more than once?
+ans. select last_name from actor group by last_name having count(last_name)>1
+
+6.Which actor has appeared in the most films?
+ans. select first_name,last_name, count(*) as "Most Appeared" from actor_info a, film_actor f where a.actor_id = f.actor_id
+group by a.actor_id order by count(*) desc limit 1; 
+
+7.Is ‘Academy Dinosaur’ available for rent from Store 1?
+
+8.Insert a record to represent Mary Smith renting ‘Academy Dinosaur’
+from Mike Hillyer at Store 1 today .
+ans.
+
+9.When is ‘Academy Dinosaur’ due?
+ans.select return_date,title from film f, rental r, inventory i where r.inventory_id=i.inventory_id 
+and f.film_id = i.film_id and title="Academy Dinosaur"
+
+10.What is that average running time of all the films in the sakila
+DB?
+ans.select avg(length) from film;
+
+11.What is the average running time of films by category?
+ans. select avg(length),name from film, film_category f , category c where film.film_id=f.film_id and f.category_id=c.category_id
+    group by name; 
+
+12.Why does this query return the empty set?
+   select * from film natural join inventory;
+ans.The SQL NATURAL JOIN means columns with the same name of associated tables will appear once only.
+    And here in both tables there is no match to perform natural join ..
