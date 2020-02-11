@@ -1,0 +1,23 @@
+<div style="padding-top: 5px">
+        <img src="INDIA.png" usemap="#image-map" border="5px solid " style="position: absolute;padding-bottom: 10px;padding-left:440px; padding-right:440px ; padding-top:50px ;top= 78px; width: 40%; height: 100%;background: rgba(0,0,0,0.3); scroll-margin: 90px;">
+        <map name="image-map">
+            <abbr title="Gujrat with it's all inclusive,
+sustainable and rapid growth,
+is emerging as globally preffered place to live in and to do business
+- by shri Narendra Modi">
+<area shape = "rect" coords="490,380,585,460" alt="Guj" href = "gujrat.htm"></abbr>
+
+<abbr title="আমার শহর কলকাতা">
+<area shape = "circle" coords="870,395,20" alt="WB" href = "wb.htm"></abbr>
+
+<abbr title="Jammu">
+<area shape = "rect" coords="590,60,715,130" alt="JK" href = "jammu.htm"></abbr>
+
+<abbr title="Tamil Nadu">
+<area shape = "circle" coords="680,680,22" alt="TN" href = "tn.htm"></abbr>
+
+
+
+        </map>
+
+    </div>
